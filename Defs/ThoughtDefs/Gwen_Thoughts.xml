@@ -113,7 +113,30 @@
       </li>
     </stages>
   </ThoughtDef>
-  
+    <ThoughtDef>
+    <defName>GWT_ShutIn_NeedRoomSize</defName>
+    <workerClass>ThoughtWorker_NeedRoomSize</workerClass>
+    <requiredTraits>
+      <li>GWT_Shut_in</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>cramped interior</label>
+        <description>This room is too small. I wish I had more space to move around and breathe.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>nice interior</label>
+        <description>This room is just right.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <li>
+        <label>spacious interior</label>
+        <description>This room is so expansive, I feel like its my own personal kingdom.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
   <ThoughtDef>
     <defName>GWT_EnvironmentDark_GloomDweller</defName>
     <workerClass>ThoughtWorker_Dark</workerClass>
