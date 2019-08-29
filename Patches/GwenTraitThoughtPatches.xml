@@ -211,6 +211,7 @@
     <xpath>/Defs/ThoughtDef[defName = "NeedRoomSize"]/nullifyingTraits</xpath>
     <value>
 		<li>GWT_Oblivious</li>
+		<li>GWT_Shut_in</li>
     </value>
   </Operation>
   
