@@ -37,7 +37,9 @@
 	defName = "Slighted" or 
 	defName = "SleptInCold" or 
 	defName = "SleptInHeat" or 
-	defName = "NotBondedAnimalMaster"]</xpath>
+	defName = "NotBondedAnimalMaster" or
+	defName = "AttendedParty" or
+	defName = "AttendedWedding"]</xpath>
     <value>
 		<nullifyingTraits>
 		</nullifyingTraits>
@@ -313,6 +315,20 @@
     </value>
   </Operation>
   
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName = "AttendedParty"]/nullifyingTraits</xpath>
+    <value>
+		<li>GWT_AnimalLover</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName = "AttendedWedding"]/nullifyingTraits</xpath>
+    <value>
+		<li>GWT_AnimalLover</li>
+    </value>
+  </Operation>
+   
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "SleptInCold"]/nullifyingTraits</xpath>
     <value>
