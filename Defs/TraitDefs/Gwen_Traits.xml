@@ -39,6 +39,8 @@
 		<li>GWT_GloomDweller</li>
 		<li>GWT_Torpid</li>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -78,6 +80,8 @@
 		<li>GWT_GloomDweller</li>
 		<li>GWT_Torpid</li>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -114,6 +118,8 @@
 		<li>GWT_GloomDweller</li>
 		<li>GWT_Torpid</li>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -145,6 +151,8 @@
 		<li>GWT_GloomDweller</li>
 		<li>GWT_Torpid</li>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -174,6 +182,8 @@
 		<li>GWT_GloomDweller</li>
 		<li>GWT_Torpid</li>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -181,7 +191,7 @@
   </TraitDef>
   <TraitDef>
     <defName>GWT_Benevolent</defName>
-    <commonality>0.1</commonality>
+    <commonality>0.5</commonality>
     <degreeDatas>
       <li>
         <label>benevolent</label>
@@ -214,6 +224,8 @@
 		<li>GWT_GloomDweller</li>
 		<li>GWT_Torpid</li>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -239,6 +251,8 @@
     </degreeDatas>
 	<requiredWorkTags>
 		<li>ManualDumb</li>
+		<li>Hauling</li>
+		<li>Cleaning</li>
 	</requiredWorkTags>
   </TraitDef>
   
@@ -263,6 +277,8 @@
 		<li>GWT_GloomDweller</li>
 		<li>GWT_Torpid</li>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -302,6 +318,8 @@
 		<li>GWT_GloomDweller</li>
 		<li>GWT_Torpid</li>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -385,6 +403,8 @@
 		<li>GWT_GloomDweller</li>
 		<li>GWT_Torpid</li>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -415,6 +435,8 @@
 		<li>GWT_Frangofilia</li>
 		<li>GWT_Torpid</li>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -453,6 +475,8 @@
 		<li>GWT_Frangofilia</li>
 		<li>GWT_GloomDweller</li>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -484,6 +508,8 @@
 		<li>GWT_Frangofilia</li>
 		<li>GWT_GloomDweller</li>
 		<li>GWT_Torpid</li>
+		<li>GWT_Misotherist</li>
+		<li>GWT_Spiteful</li>
 		<!-- <li>GWT_Simple</li> -->
 		<!-- <li>GWT_ColdResistant</li> -->
 		<!-- <li>GWT_HeatResistant</li> -->
@@ -491,6 +517,133 @@
     <requiredWorkTags>
       <li>Animals</li>
     </requiredWorkTags>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>GWT_Pyschicly_Inverted</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>Pyschicly Inverted</label>
+        <description>{PAWN_nameDef} is not affected by ambient psychic phenomena the way others are. {PAWN_pronoun} often ends up with the opposite of the intended effect.</description>
+        <statOffsets>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+	<conflictingTraits>
+		<!-- <li>GWT_Simple</li> -->
+		<!-- <li>GWT_ColdResistant</li> -->
+		<!-- <li>GWT_HeatResistant</li> -->
+	</conflictingTraits>
+  </TraitDef>
+
+  <TraitDef>
+    <defName>GWT_Spiteful</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>Spiteful</label>
+        <description>{PAWN_nameDef} is always on the lookout for how to take others down a peg.  {PAWN_pronoun} can see the faults and weaknesses of others at a glance, and isn't afraid to use those to get his/her way.  When angered, {PAWN_nameDef} lashes out at others with this talent, though they may regret {PAWN_pronoun}'s actions later</description>
+        <theOnlyAllowedMentalBreaks>
+          <li>SadisticRage</li>
+          <li>MurderousRage</li>
+          <li>InsultingSpree</li>
+          <li>TargetedInsultingSpree</li>
+        </theOnlyAllowedMentalBreaks>
+        <randomMentalState>TargetedInsultingSpree</randomMentalState>
+        <randomMentalStateMtbDaysMoodCurve>
+          <points>
+            <li>(0, 50)</li>
+          </points>
+        </randomMentalStateMtbDaysMoodCurve>
+		<statFactors>
+			<!-- Optional. Modifies pawn stats by multiplier -->
+		</statFactors>
+        <statOffsets>
+			<NegotiationAbility>0.10</NegotiationAbility>
+			<SocialImpact>0.20</SocialImpact>
+			<TradePriceImprovement>0.05</TradePriceImprovement>
+			<MeleeHitChance>5</MeleeHitChance>
+			<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+	<conflictingTraits>
+		<li>GWT_Restless</li>
+		<li>GWT_Shut_in</li>
+		<li>GWT_Morbid</li>
+		<li>GWT_DeadendNerves</li>
+		<li>GWT_Oblivious</li>
+		<li>GWT_Benevolent</li>
+		<li>GWT_Ennui</li>
+		<li>GWT_Malchemist</li>
+		<li>GWT_Frangofilia</li>
+		<li>GWT_GloomDweller</li>
+		<li>GWT_Torpid</li>
+		<li>GWT_AnimalLover</li>
+		<li>GWT_Spiteful</li>
+		<!-- <li>GWT_Simple</li> -->
+		<!-- <li>GWT_ColdResistant</li> -->
+		<!-- <li>GWT_HeatResistant</li> -->
+	</conflictingTraits>
+    <requiredWorkTags>
+      <li>Social</li>
+    </requiredWorkTags>
+  </TraitDef>
+  
+  <TraitDef>
+    <defName>GWT_Misotherist</defName>
+    <commonality>0.5</commonality>
+    <degreeDatas>
+      <li>
+        <label>Misotherist</label>
+        <description>{PAWN_nameDef} suffers has a great contempt for animals and nature known as Misothery. {PAWN_pronoun} wants to pave over an every bit of nature and when mood is low {PAWN_nameDef} will slaughter colony animals.</description>
+        <theOnlyAllowedMentalBreaks>
+          <li>Slaughterer</li>
+        </theOnlyAllowedMentalBreaks>
+        <randomMentalState>Slaughterer</randomMentalState>
+        <randomMentalStateMtbDaysMoodCurve>
+          <points>
+            <li>(0, 50)</li>
+          </points>
+        </randomMentalStateMtbDaysMoodCurve>
+		<statFactors>
+			<!-- Optional. Modifies pawn stats by multiplier -->
+		</statFactors>
+        <statOffsets>
+			<SmoothingSpeed>0.20</SmoothingSpeed>
+			<ConstructSuccessChance>1.2</ConstructSuccessChance>
+			<ConstructionSpeed>0.20</ConstructionSpeed>
+			<ButcheryFleshSpeed>0.20</ButcheryFleshSpeed>
+        </statOffsets>
+      </li>
+    </degreeDatas>
+	<conflictingTraits>
+		<li>GWT_Restless</li>
+		<li>GWT_Shut_in</li>
+		<li>GWT_Morbid</li>
+		<li>GWT_DeadendNerves</li>
+		<li>GWT_Oblivious</li>
+		<li>GWT_Benevolent</li>
+		<li>GWT_Ennui</li>
+		<li>GWT_Malchemist</li>
+		<li>GWT_Frangofilia</li>
+		<li>GWT_GloomDweller</li>
+		<li>GWT_Torpid</li>
+		<li>GWT_AnimalLover</li>
+		<li>GWT_Spiteful</li>
+		<!-- <li>GWT_Simple</li> -->
+		<!-- <li>GWT_ColdResistant</li> -->
+		<!-- <li>GWT_HeatResistant</li> -->
+	</conflictingTraits>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+      <li>ManualDumb</li>
+    </requiredWorkTags>
+    <disabledWorkTags>
+		<li>Animals</li>
+		<li>PlantWork</li>
+	</disabledWorkTags>
   </TraitDef>
   
 </Defs>

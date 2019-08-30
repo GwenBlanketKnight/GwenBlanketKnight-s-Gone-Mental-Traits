@@ -3,7 +3,7 @@
 
 <!-- 
  the below patch operation adds a nullification field to defs without them. if any other mod does the same it will erase those mods defs. I tested. This is required as far as I can tell.
-
+          
 -->
 
   <Operation Class="PatchOperationAdd">
@@ -32,14 +32,29 @@
 	defName = "HospitalPatientRoomStats" or 
 	defName = "SoldPrisoner" or 
 	defName = "KilledColonyAnimal" or 
-	defName = "KilledColonist" or   
-	defName = "KilledColonist" or 
+	defName = "KilledColonist" or  
 	defName = "Slighted" or 
 	defName = "SleptInCold" or 
 	defName = "SleptInHeat" or 
 	defName = "NotBondedAnimalMaster" or
 	defName = "AttendedParty" or
-	defName = "AttendedWedding"]</xpath>
+	defName = "AttendedWedding" or
+	defName = "PsychicEmanatorSoothe" or
+	defName = "PsychicDrone" or
+	defName = "GotSomeLovin" or  
+	defName = "DivorcedMe" or 
+	defName = "CheatedOnMe" or 
+	defName = "BrokeUpWithMe" or 
+	defName = "FailedRomanceAttemptOnMe" or
+	defName = "RebuffedMyRomanceAttempt" or
+	defName = "RejectedMyProposal" or
+	defName = "PsychicEmanatorSoothe" or
+	defName = "IRejectedTheirProposal" or
+	defName = "HoneymoonPhase" or
+	defName = "GotMarried" or
+	defName = "KilledMyBondedAnimal" or
+	defName = "ArtifactMoodBoost"
+	]</xpath>
     <value>
 		<nullifyingTraits>
 		</nullifyingTraits>
@@ -118,6 +133,7 @@
     <xpath>/Defs/ThoughtDef[defName = "Nuzzled"]/nullifyingTraits</xpath>
     <value>
 		<li>GWT_DeadendNerves</li>
+		<li>GWT_Misotherist</li>
     </value>
   </Operation>
   
@@ -165,7 +181,6 @@
 		<li>GWT_Oblivious</li>
     </value>
   </Operation>
-  
   
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "JoyActivityInImpressiveRecRoom"]/nullifyingTraits</xpath>
@@ -270,6 +285,7 @@
     <xpath>/Defs/ThoughtDef[defName = "KilledColonyAnimal"]/nullifyingTraits</xpath>
     <value>
 		<li>GWT_AnimalLover</li>
+		<li>GWT_Misotherist</li>
     </value>
   </Operation>
   
@@ -343,5 +359,32 @@
     </value>
   </Operation>
   
-   
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName = "PsychicEmanatorSoothe"]/nullifyingTraits</xpath>
+    <value>
+		<li>GWT_Pyschicly_Inverted</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName = "PsychicDrone"]/nullifyingTraits</xpath>
+    <value>
+		<li>GWT_Pyschicly_Inverted</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName = "ArtifactMoodBoost"]/nullifyingTraits</xpath>
+    <value>
+		<li>GWT_Pyschicly_Inverted</li>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThoughtDef[defName = "KilledMyBondedAnimal"]/nullifyingTraits</xpath>
+    <value>
+		<li>GWT_Misotherist</li>
+    </value>
+  </Operation>
+
 </Patch>
