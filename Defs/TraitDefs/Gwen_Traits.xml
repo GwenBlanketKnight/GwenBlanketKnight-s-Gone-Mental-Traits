@@ -2,7 +2,7 @@
 <Defs>
   <TraitDef>
     <defName>GWT_Restless</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>restless</label>
@@ -49,7 +49,7 @@
   
   <TraitDef>
     <defName>GWT_Shut_in</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>shut-in</label>
@@ -90,7 +90,7 @@
   
   <TraitDef>
     <defName>GWT_Morbid</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>morbid</label>
@@ -161,7 +161,7 @@
    
   <TraitDef>
     <defName>GWT_Oblivious</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <description>{PAWN_nameDef} is lost in their own head most of the time, and doesn't pay much attention to their surroundings.  They aren't moved by great beauty, don't take the time to feel comfortable in their own bed, or notice the growing piles of dirt and puddles of blood and vomit around them.</description>
@@ -191,7 +191,7 @@
   </TraitDef>
   <TraitDef>
     <defName>GWT_Benevolent</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>benevolent</label>
@@ -234,7 +234,7 @@
     
   <TraitDef>
     <defName>GWT_Simple</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>simple</label>
@@ -258,7 +258,7 @@
   
   <TraitDef>
     <defName>GWT_Ennui</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>ennui</label>
@@ -287,7 +287,7 @@
   
   <TraitDef>
     <defName>GWT_Malchemist</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>malchemist</label>
@@ -328,7 +328,7 @@
   
   <TraitDef>
     <defName>GWT_ColdResistant</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>cold resistant</label>
@@ -346,7 +346,7 @@
   
   <TraitDef>
     <defName>GWT_HeatResistant</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>heat resistant</label>
@@ -364,7 +364,7 @@
   
   <TraitDef>
     <defName>GWT_Frangofilia</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>frangofilia</label>
@@ -413,7 +413,7 @@
   
   <TraitDef>
     <defName>GWT_GloomDweller</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>gloom dweller</label>
@@ -446,7 +446,7 @@
   
   <TraitDef>
     <defName>GWT_Torpid</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>torpid</label>
@@ -485,7 +485,7 @@
   
   <TraitDef>
     <defName>GWT_AnimalLover</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>animal attuned</label>
@@ -521,7 +521,7 @@
   
   <TraitDef>
     <defName>GWT_Pyschicly_Inverted</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>Pyschicly Inverted</label>
@@ -539,7 +539,7 @@
 
   <TraitDef>
     <defName>GWT_Spiteful</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>Spiteful</label>
@@ -593,7 +593,7 @@
   
   <TraitDef>
     <defName>GWT_Misotherist</defName>
-    <commonality>0.5</commonality>
+    <commonality>1</commonality>
     <degreeDatas>
       <li>
         <label>Misotherist</label>
