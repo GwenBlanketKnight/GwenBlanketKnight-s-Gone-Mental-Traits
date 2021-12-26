@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>GWT_ColonistLeftUnburied_Morbid</defName>
+    <workerClass>ThoughtWorker_ColonistLeftUnburied</workerClass>
+    <requiredTraits>
+      <li>GWT_Morbid</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>colonist left unburied</label>
+        <description>One of our own may be dead, but I find their corpse to be a nice reminder</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_DeadMansApparel_Morbid</defName>
+    <workerClass>ThoughtWorker_DeadMansApparel</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>tainted {0}</label>
+        <description>I am wearing a piece of apparel that someone died in. Fascinating.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>tainted {0} (+1)</label>
+        <description>I am wearing two pieces of apparel that someone died in. It is actually kinda neat.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+      <li>
+        <label>tainted {0} (+2)</label>
+        <description>I am wearing three pieces of apparel that someone died in. I can still see the blood stains!</description>
+        <baseMoodEffect>11</baseMoodEffect>
+      </li>
+      <li>
+        <label>tainted {0} etc</label>
+        <description>I am wearing four or more pieces of apparel that someone died in. I wonder what they looked like when they died.</description>
+        <baseMoodEffect>14</baseMoodEffect>
+      </li>
+    </stages>
+    <requiredTraits>
+      <li>GWT_Morbid</li>
+    </requiredTraits>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_NeedOutdoors_Shutin</defName>
+    <workerClass>ThoughtWorker_NeedOutdoors</workerClass>
+    <requiredTraits>
+      <li>GWT_Shut_in</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>protected underground</label>
+        <description>I feel like the weight of this mountain is protecting me.</description>
+        <baseMoodEffect>25</baseMoodEffect>
+      </li>
+      <li>
+        <label>safe underground</label>
+        <description>I haven't had to leave for a long time. This is the best palce to be.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+      <li>
+        <label>cabin relief</label>
+        <description>I've spent so long indoors I feel like nothing can hurt me.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+      <li>
+        <label>safe indoors</label>
+        <description>I'm glad I don't have to deal with the outside.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>stuck indoors</label>
+        <description>I feel comfy and safe here.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_SickHappy</defName>
+    <workerClass>ThoughtWorker_Sick</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>GWT_Malchemist</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>sick</label>
+        <description>This the best feeling</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_MoodOffsetDepressive_ShutIn</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>GWT_Shut_in</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>wants to live at home</label>
+        <description>Just wants to live at home and never leave. (Staying indoors will increase their mood by 5 per stage offsetting this penalty by stage 2 of 5 with a net +15 at stage 5.)</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_ShutIn_NeedRoomSize</defName>
+    <workerClass>ThoughtWorker_NeedRoomSize</workerClass>
+    <requiredTraits>
+      <li>GWT_Shut_in</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>cramped interior</label>
+        <description>This room is too small. I wish I had more space to move around and breathe.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>nice interior</label>
+        <description>This room is just right.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+      <li>
+        <label>spacious interior</label>
+        <description>This room is so expansive, I feel like its my own personal kingdom.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_EnvironmentDark_GloomDweller</defName>
+    <workerClass>ThoughtWorker_Dark</workerClass>
+    <requiredTraits>
+      <li>GWT_GloomDweller</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>darkness</label>
+        <description>I've been in the dark for a while. I like it.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_AnimalLover_BondedAnimalMaster</defName>
+    <thoughtClass>Thought_BondedAnimalMaster</thoughtClass>
+    <workerClass>ThoughtWorker_BondedAnimalMaster</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>GWT_AnimalLover</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>{0}'s master</label>
+        <description>Being together with my bonded animal makes me feel better.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+      <li>
+        <label>master of {0}</label>
+        <description>Being together with my bonded animals makes me feel better.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>AnimalLoverNotBondedAnimalMaster</defName>
+    <thoughtClass>Thought_NotBondedAnimalMaster</thoughtClass>
+    <workerClass>ThoughtWorker_NotBondedAnimalMaster</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>GWT_AnimalLover</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>not {0}'s master</label>
+        <description>I should be together with my bonded animal.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+      <li>
+        <label>not master of {0}</label>
+        <description>I should be together with my bonded animals.</description>
+        <baseMoodEffect>-6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>AnimalLoverKilledColonyAnimal</defName>
+    <thoughtClass>Thought_Tale</thoughtClass>
+    <workerClass>ThoughtWorker_Tale</workerClass>
+    <taleDef>KilledColonyAnimal</taleDef>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>GWT_AnimalLover</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>killed colony animal</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+    </stages>
+    <nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_Benevolent_SoldPrisoner</defName>
+    <thoughtClass>Thought_Tale</thoughtClass>
+    <workerClass>ThoughtWorker_Tale</workerClass>
+    <taleDef>SoldPrisoner</taleDef>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>GWT_Benevolent</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>sold prisoner to slavery</label>
+        <baseOpinionOffset>-30</baseOpinionOffset>
+      </li>
+    </stages>
+    <nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_Benevolent_ExecutedPrisoner</defName>
+    <thoughtClass>Thought_Tale</thoughtClass>
+    <workerClass>ThoughtWorker_Tale</workerClass>
+    <taleDef>ExecutedPrisoner</taleDef>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>GWT_Benevolent</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>executed prisoner</label>
+        <baseOpinionOffset>-16</baseOpinionOffset>
+      </li>
+    </stages>
+    <nullifiedIfNotColonist>true</nullifiedIfNotColonist>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_MoodOffsetDepressive_Ennui</defName>
+    <workerClass>ThoughtWorker_AlwaysActive</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>GWT_Ennui</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>desires some mental stimulation</label>
+        <description>desires some mental stimulation to get past this perpetual driving boredom. this means doing work they have a passion for. (grants net +16 for minor passion +28 for major passion)</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_Ennui_DoingPassionateWork</defName>
+    <workerClass>ThoughtWorker_PassionateWork</workerClass>
+    <requiredTraits>
+      <li>GWT_Ennui</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>minor passion for my work</label>
+        <description>I enjoy my work.</description>
+        <baseMoodEffect>26</baseMoodEffect>
+      </li>
+      <li>
+        <label>burning passion for my work</label>
+        <description>I love my work. I could do this all day, every day.</description>
+        <baseMoodEffect>38</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_AnimalLover_NeedBeauty</defName>
+    <workerClass>ThoughtWorker_NeedBeauty</workerClass>
+    <requiredTraits>
+      <li>GWT_AnimalLover</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>hideous environment</label>
+        <description>Not worse than being outside with the animals.</description>
+        <baseMoodEffect>-0</baseMoodEffect>
+      </li>
+      <li>
+        <label>ugly environment</label>
+        <description>Not worse than being outside with the animals.</description>
+        <baseMoodEffect>-0</baseMoodEffect>
+      </li>
+      <li>
+        <label>unsightly environment</label>
+        <description>Not worse than being outside with the animals.</description>
+        <baseMoodEffect>-0</baseMoodEffect>
+      </li>
+      <li>
+        <label>pretty environment</label>
+        <description>This place looks nice.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>beautiful environment</label>
+        <description>I really like this place. It's beautiful.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>gorgeous environment</label>
+        <description>This place is beautiful. It lifts me up and makes me love life.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_Torpid_NeedComfort</defName>
+    <workerClass>ThoughtWorker_NeedComfort</workerClass>
+    <validWhileDespawned>true</validWhileDespawned>
+    <requiredTraits>
+      <li>GWT_Torpid</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>very uncomfortable</label>
+        <description>I've been really uncomfortable recently. We must get something soft to sit on around here.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>uncomfortable</label>
+        <description>I've been kind of uncomfortable recently. We need to get something soft to sit on around here.</description>
+        <baseMoodEffect>-2</baseMoodEffect>
+      </li>
+      <li>
+        <label>quite comfortable</label>
+        <description>I've been very comfortable recently.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>extremely comfortable</label>
+        <description>I've been extremely comfortable recently. This place is so cushy!</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>luxuriantly comfortable</label>
+        <description>I am resting on clouds of heaven.</description>
+        <baseMoodEffect>16</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_Pyschicly_Inverted_PsychicEmanatorSoothe</defName>
+    <workerClass>ThoughtWorker_PsychicEmanatorSoothe</workerClass>
+    <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+    <requiredTraits>
+      <li>GWT_Pyschicly_Inverted</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>psychic emanator soothe (inverted)</label>
+        <description>The psychic emanator makes me feel strange, it is unsettling my nerves.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_Pyschicly_Inverted_PsychicDrone</defName>
+    <workerClass>ThoughtWorker_PsychicDrone</workerClass>
+    <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+    <requiredTraits>
+      <li>GWT_Pyschicly_Inverted</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>psychic soothe (inverted)</label>
+        <description>It's like a calming voice at the back of my mind, tickling my brain and causing it to itch unbearably. I wish it would stop.</description>
+        <baseMoodEffect>-16</baseMoodEffect>
+      </li>
+      <li>
+        <label>low psychic drone (inverted)</label>
+        <description>It's like a scratching at the back of my mind. MY mind always itched back there anyway.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+      <li>
+        <label>moderate psychic drone (inverted)</label>
+        <description>I feel like someone is always just out of sight, speaking to me. I feel like I always have a freind nearby!</description>
+        <baseMoodEffect>16</baseMoodEffect>
+      </li>
+      <li>
+        <label>high psychic drone (inverted)</label>
+        <description>The voice is unbearably loud. It is nice to always have someone to talk to even if they are a bit loud</description>
+        <baseMoodEffect>24</baseMoodEffect>
+      </li>
+      <li>
+        <label>extreme psychic drone (inverted)</label>
+        <description>My heart pounds and I'm sweating. All I can think of is how much i love my new friend.</description>
+        <baseMoodEffect>32</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>GWT_Pyschicly_Inverted_ArtifactMoodBoost</defName>
+    <durationDays>1.0</durationDays>
+    <stackLimit>3</stackLimit>
+    <requiredTraits>
+      <li>GWT_Pyschicly_Inverted</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>strange feeling</label>
+        <description>I feel strange, my brain itches.</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>
