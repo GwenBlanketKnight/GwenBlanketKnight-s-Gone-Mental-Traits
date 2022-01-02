@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-
-<!-- 
+  <!-- 
  the below patch operation adds a nullification field to defs without them. if any other mod does the same it will erase those mods defs. I tested. This is required as far as I can tell.
           
 -->
-
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "SoakingWet" or 
 	defName = "SleptInCold" or 
@@ -36,7 +34,6 @@
 	defName = "Slighted" or 
 	defName = "SleptInCold" or 
 	defName = "SleptInHeat" or 
-	defName = "NotBondedAnimalMaster" or
 	defName = "AttendedParty" or
 	defName = "AttendedWedding" or
 	defName = "PsychicEmanatorSoothe" or
@@ -56,335 +53,289 @@
 	defName = "ArtifactMoodBoost"
 	]</xpath>
     <value>
-		<nullifyingTraits>
-		</nullifyingTraits>
+      <nullifyingTraits>
+      </nullifyingTraits>
     </value>
   </Operation>
-
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "NeedOutdoors"]</xpath>
     <value>
-		<nullifyingTraits>
-		<li>GWT_Shut_in</li>
-		</nullifyingTraits>
+      <nullifyingTraits>
+        <li>GWT_Shut_in</li>
+      </nullifyingTraits>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "ColonistLeftUnburied"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Morbid</li>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_Morbid</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "ObservedLayingCorpse"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Morbid</li>
+      <li>GWT_Morbid</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "ObservedLayingRottingCorpse"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Morbid</li>
+      <li>GWT_Morbid</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "DeadMansApparel"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Morbid</li>
+      <li>GWT_Morbid</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "HumanLeatherApparelSad"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Morbid</li>
+      <li>GWT_Morbid</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "Pain"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_DeadendNerves</li>
+      <li>GWT_DeadendNerves</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "SleptInCold"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_DeadendNerves</li>
-		<li>GWT_ColdResistant</li>
+      <li>GWT_DeadendNerves</li>
+      <li>GWT_ColdResistant</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "SleptInHeat"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_DeadendNerves</li>
-		<li>GWT_HeatResistant</li>
+      <li>GWT_DeadendNerves</li>
+      <li>GWT_HeatResistant</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "Nuzzled"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_DeadendNerves</li>
-		<li>GWT_Misotherist</li>
+      <li>GWT_DeadendNerves</li>
+      <li>GWT_Misotherist</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "SoakingWet"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_GloomDweller</li>
+      <li>GWT_GloomDweller</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "EnvironmentCold"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_DeadendNerves</li>
+      <li>GWT_DeadendNerves</li>
     </value>
   </Operation>
-
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "EnvironmentHot"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_DeadendNerves</li>
+      <li>GWT_DeadendNerves</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "NeedComfort"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_DeadendNerves</li>
-		<li>GWT_Oblivious</li>
-		<li>GWT_Torpid</li>
+      <li>GWT_DeadendNerves</li>
+      <li>GWT_Oblivious</li>
+      <li>GWT_Torpid</li>
     </value>
   </Operation>
-         
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "NeedBeauty"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_Oblivious</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "AteInImpressiveDiningRoom"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
+      <li>GWT_Oblivious</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "JoyActivityInImpressiveRecRoom"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
+      <li>GWT_Oblivious</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "SleptInBedroom"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
+      <li>GWT_Oblivious</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "SleptInBarracks"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
+      <li>GWT_Oblivious</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "HospitalPatientRoomStats"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
+      <li>GWT_Oblivious</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "PrisonBarracks"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
+      <li>GWT_Oblivious</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "PrisonCell"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
+      <li>GWT_Oblivious</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "NeedRoomSize"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
-		<li>GWT_Shut_in</li>
+      <li>GWT_Oblivious</li>
+      <li>GWT_Shut_in</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "NeedFood"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
+      <li>GWT_Oblivious</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "NeedJoy"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
+      <li>GWT_Oblivious</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "NeedRest"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Oblivious</li>
+      <li>GWT_Oblivious</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "EnvironmentDark"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_GloomDweller</li>
+      <li>GWT_GloomDweller</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "ApparelDamaged"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Frangofilia</li>
+      <li>GWT_Frangofilia</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "BondedAnimalMaster"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "NotBondedAnimalMaster"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "KilledColonyAnimal"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_AnimalLover</li>
-		<li>GWT_Misotherist</li>
+      <li>GWT_AnimalLover</li>
+      <li>GWT_Misotherist</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "KilledColonist"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "Chitchat"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "ColonistBanishedToDie"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "SoldPrisoner"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "ColonistBanished"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "Slighted"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "AttendedParty"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "AttendedWedding"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_AnimalLover</li>
+      <li>GWT_AnimalLover</li>
     </value>
   </Operation>
-   
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "SleptInCold"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_ColdResistant</li>
+      <li>GWT_ColdResistant</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "SleptInHeat"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_HeatResistant</li>
+      <li>GWT_HeatResistant</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "PsychicEmanatorSoothe"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Pyschicly_Inverted</li>
+      <li>GWT_Pyschicly_Inverted</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "PsychicDrone"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Pyschicly_Inverted</li>
+      <li>GWT_Pyschicly_Inverted</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "ArtifactMoodBoost"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Pyschicly_Inverted</li>
+      <li>GWT_Pyschicly_Inverted</li>
     </value>
   </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/ThoughtDef[defName = "KilledMyBondedAnimal"]/nullifyingTraits</xpath>
     <value>
-		<li>GWT_Misotherist</li>
+      <li>GWT_Misotherist</li>
     </value>
   </Operation>
-
 </Patch>

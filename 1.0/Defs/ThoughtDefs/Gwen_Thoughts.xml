@@ -1,6 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThoughtDef>
     <defName>GWT_ColonistLeftUnburied_Morbid</defName>
     <workerClass>ThoughtWorker_ColonistLeftUnburied</workerClass>
@@ -15,7 +14,6 @@
       </li>
     </stages>
   </ThoughtDef>
-
   <ThoughtDef>
     <defName>GWT_DeadMansApparel_Morbid</defName>
     <workerClass>ThoughtWorker_DeadMansApparel</workerClass>
@@ -26,31 +24,30 @@
         <description>I am wearing a piece of apparel that someone died in. Fascinating.</description>
         <baseMoodEffect>5</baseMoodEffect>
       </li>
-			<li>
-				<label>tainted {0} (+1)</label>
-				<description>I am wearing two pieces of apparel that someone died in. It is actually kinda neat.</description>
-				<baseMoodEffect>8</baseMoodEffect>
-			</li>
-			<li>
-				<label>tainted {0} (+2)</label>
-				<description>I am wearing three pieces of apparel that someone died in. I can still see the blood stains!</description>
-				<baseMoodEffect>11</baseMoodEffect>
-			</li>
-			<li>
-				<label>tainted {0} etc</label>
-				<description>I am wearing four or more pieces of apparel that someone died in. I wonder what they looked like when they died.</description>
-				<baseMoodEffect>14</baseMoodEffect>
-			</li>
-    </stages> 
-	<requiredTraits>
+      <li>
+        <label>tainted {0} (+1)</label>
+        <description>I am wearing two pieces of apparel that someone died in. It is actually kinda neat.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+      <li>
+        <label>tainted {0} (+2)</label>
+        <description>I am wearing three pieces of apparel that someone died in. I can still see the blood stains!</description>
+        <baseMoodEffect>11</baseMoodEffect>
+      </li>
+      <li>
+        <label>tainted {0} etc</label>
+        <description>I am wearing four or more pieces of apparel that someone died in. I wonder what they looked like when they died.</description>
+        <baseMoodEffect>14</baseMoodEffect>
+      </li>
+    </stages>
+    <requiredTraits>
       <li>GWT_Morbid</li>
     </requiredTraits>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>GWT_NeedOutdoors_Shutin</defName>
     <workerClass>ThoughtWorker_NeedOutdoors</workerClass>
-	<requiredTraits>
+    <requiredTraits>
       <li>GWT_Shut_in</li>
     </requiredTraits>
     <stages>
@@ -81,12 +78,11 @@
       </li>
     </stages>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>GWT_SickHappy</defName>
     <workerClass>ThoughtWorker_Sick</workerClass>
     <validWhileDespawned>true</validWhileDespawned>
-	<requiredTraits>
+    <requiredTraits>
       <li>GWT_Malchemist</li>
     </requiredTraits>
     <stages>
@@ -97,7 +93,6 @@
       </li>
     </stages>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>GWT_MoodOffsetDepressive_ShutIn</defName>
     <workerClass>ThoughtWorker_AlwaysActive</workerClass>
@@ -113,7 +108,7 @@
       </li>
     </stages>
   </ThoughtDef>
-    <ThoughtDef>
+  <ThoughtDef>
     <defName>GWT_ShutIn_NeedRoomSize</defName>
     <workerClass>ThoughtWorker_NeedRoomSize</workerClass>
     <requiredTraits>
@@ -151,7 +146,6 @@
       </li>
     </stages>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>GWT_AnimalLover_BondedAnimalMaster</defName>
     <thoughtClass>Thought_BondedAnimalMaster</thoughtClass>
@@ -173,7 +167,6 @@
       </li>
     </stages>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>AnimalLoverNotBondedAnimalMaster</defName>
     <thoughtClass>Thought_NotBondedAnimalMaster</thoughtClass>
@@ -195,7 +188,6 @@
       </li>
     </stages>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>AnimalLoverKilledColonyAnimal</defName>
     <thoughtClass>Thought_Tale</thoughtClass>
@@ -213,7 +205,6 @@
     </stages>
     <nullifiedIfNotColonist>true</nullifiedIfNotColonist>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>GWT_Benevolent_SoldPrisoner</defName>
     <thoughtClass>Thought_Tale</thoughtClass>
@@ -231,7 +222,6 @@
     </stages>
     <nullifiedIfNotColonist>true</nullifiedIfNotColonist>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>GWT_Benevolent_ExecutedPrisoner</defName>
     <thoughtClass>Thought_Tale</thoughtClass>
@@ -249,7 +239,6 @@
     </stages>
     <nullifiedIfNotColonist>true</nullifiedIfNotColonist>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>GWT_MoodOffsetDepressive_Ennui</defName>
     <workerClass>ThoughtWorker_AlwaysActive</workerClass>
@@ -265,7 +254,6 @@
       </li>
     </stages>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>GWT_Ennui_DoingPassionateWork</defName>
     <workerClass>ThoughtWorker_PassionateWork</workerClass>
@@ -285,8 +273,6 @@
       </li>
     </stages>
   </ThoughtDef>
-  
-  
   <ThoughtDef>
     <defName>GWT_AnimalLover_NeedBeauty</defName>
     <workerClass>ThoughtWorker_NeedBeauty</workerClass>
@@ -326,8 +312,6 @@
       </li>
     </stages>
   </ThoughtDef>
-  
-  
   <ThoughtDef>
     <defName>GWT_Torpid_NeedComfort</defName>
     <workerClass>ThoughtWorker_NeedComfort</workerClass>
@@ -363,12 +347,11 @@
       </li>
     </stages>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>GWT_Pyschicly_Inverted_PsychicEmanatorSoothe</defName>
     <workerClass>ThoughtWorker_PsychicEmanatorSoothe</workerClass>
     <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
-	<requiredTraits>
+    <requiredTraits>
       <li>GWT_Pyschicly_Inverted</li>
     </requiredTraits>
     <stages>
@@ -383,7 +366,7 @@
     <defName>GWT_Pyschicly_Inverted_PsychicDrone</defName>
     <workerClass>ThoughtWorker_PsychicDrone</workerClass>
     <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
-	<requiredTraits>
+    <requiredTraits>
       <li>GWT_Pyschicly_Inverted</li>
     </requiredTraits>
     <stages>
@@ -414,12 +397,11 @@
       </li>
     </stages>
   </ThoughtDef>
-  
   <ThoughtDef>
     <defName>GWT_Pyschicly_Inverted_ArtifactMoodBoost</defName>
     <durationDays>1.0</durationDays>
     <stackLimit>3</stackLimit>
-	<requiredTraits>
+    <requiredTraits>
       <li>GWT_Pyschicly_Inverted</li>
     </requiredTraits>
     <stages>
